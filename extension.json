@@ -1,0 +1,83 @@
+{
+	"name": "SemanticDataTables",
+	"version": "0.1.2",
+	"author": [
+		"Hiroaki KAWAI"
+	],
+	"url": "https://github.com/hkwi/SemanticDataTables",
+	"descriptionmsg": "semanticdatatables-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "semantic",
+	"requires": {
+		"MediaWiki": ">= 1.43",
+		"extensions": {
+			"SemanticMediaWiki": ">= 6.0"
+		}
+	},
+	"MessagesDirs": {
+		"SemanticDataTables": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"SMWDataTables\\": "src/"
+	},
+	"APIModules": {
+		"ext.semanticdatatables.query": "SMWDataTables\\Api\\DataTablesQueryApi"
+	},
+	"ResourceModules": {
+		"ext.semanticDataTables.styles": {
+			"styles": [
+				"resources/vendor/datatables/dataTables.dataTables.min.css",
+				"resources/vendor/datatables/dataTables.dateTime.min.css",
+				"resources/vendor/datatables/buttons.dataTables.min.css",
+				"resources/vendor/datatables/responsive.dataTables.min.css",
+				"resources/vendor/datatables/searchBuilder.dataTables.min.css",
+				"resources/ext.semanticDataTables.less"
+			]
+		},
+		"ext.semanticDataTables.vendor": {
+			"scripts": [
+				"resources/vendor/datatables/dataTables.min.js",
+				"resources/vendor/datatables/dataTables.dataTables.min.js",
+				"resources/vendor/datatables/dataTables.dateTime.min.js",
+				"resources/vendor/datatables/dataTables.buttons.min.js",
+				"resources/vendor/datatables/buttons.dataTables.min.js",
+				"resources/vendor/datatables/buttons.html5.min.js",
+				"resources/vendor/datatables/buttons.print.min.js",
+				"resources/vendor/datatables/buttons.colVis.min.js",
+				"resources/vendor/datatables/dataTables.responsive.min.js",
+				"resources/vendor/datatables/responsive.dataTables.min.js",
+				"resources/vendor/datatables/dataTables.searchBuilder.min.js",
+				"resources/vendor/datatables/searchBuilder.dataTables.min.js"
+			],
+			"dependencies": [
+				"jquery"
+			]
+		},
+		"ext.semanticDataTables": {
+			"scripts": [
+				"resources/ext.semanticDataTables.js"
+			],
+			"dependencies": [
+				"ext.semanticDataTables.styles",
+				"ext.semanticDataTables.vendor",
+				"jquery",
+				"mediawiki.api",
+				"mediawiki.util"
+			],
+			"messages": [
+				"semanticdatatables-error-missing-datatables",
+				"semanticdatatables-loading"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SemanticDataTables"
+	},
+	"ExtensionFunctions": [
+		"SMWDataTables\\Extension::onExtensionFunction"
+	],
+	"manifest_version": 2
+}

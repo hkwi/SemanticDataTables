@@ -1,0 +1,328 @@
+.semantic-datatables-container {
+	width: 100%;
+}
+
+.semantic-datatables-container div.dt-container {
+	position: relative;
+	margin-block: 1rem;
+	border: 1px solid #a2a9b1;
+	border-radius: 2px;
+	color: #202122;
+	line-height: 1.6;
+}
+
+.semantic-datatables-container div.dt-container div.dt-layout-row {
+	display: flex !important;
+	width: auto;
+	margin: 0;
+	border-top: 1px solid #a2a9b1;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.semantic-datatables-container div.dt-container div.dt-layout-row:first-of-type {
+	border-top: 0;
+}
+
+.semantic-datatables-container div.dt-container div.dt-layout-row.dt-layout-table + div.dt-layout-row {
+	border-top: 0;
+}
+
+.semantic-datatables-container div.dt-container div.dt-layout-row:not( .dt-layout-table ) {
+	padding: 0.75rem;
+}
+
+.semantic-datatables-container div.dt-container div.dt-layout-cell {
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.semantic-datatables-container div.dt-container div.dt-layout-cell.dt-layout-end {
+	justify-content: flex-end;
+	margin-left: auto;
+}
+
+.semantic-datatables-container div.dt-container .dt-input,
+.semantic-datatables-container div.dt-container .dt-search input,
+.semantic-datatables-container div.dt-container div.dtsb-searchBuilder select.dtsb-dropDown {
+	min-height: 32px;
+	padding: 4px 8px;
+	border-color: #72777d;
+	border-radius: 2px;
+	background-color: #fff;
+	box-shadow: inset 0 0 0 1px transparent;
+	color: #202122;
+	font: inherit;
+	line-height: 1.6;
+	transition: background-color 100ms, border-color 100ms, box-shadow 100ms, color 100ms;
+}
+
+.semantic-datatables-container div.dt-container select.dt-input,
+.semantic-datatables-container div.dt-container div.dtsb-searchBuilder select.dtsb-dropDown {
+	padding-inline: 12px;
+	background-color: #f8f9fa;
+}
+
+.semantic-datatables-container div.dt-container .dt-input:hover,
+.semantic-datatables-container div.dt-container .dt-search input:hover,
+.semantic-datatables-container div.dt-container div.dtsb-searchBuilder select.dtsb-dropDown:hover {
+	border-color: #202122;
+}
+
+.semantic-datatables-container div.dt-container .dt-input:focus,
+.semantic-datatables-container div.dt-container .dt-search input:focus,
+.semantic-datatables-container div.dt-container div.dtsb-searchBuilder select.dtsb-dropDown:focus {
+	border-color: #36c;
+	box-shadow: inset 0 0 0 1px #36c;
+	outline: 1px solid transparent;
+}
+
+.semantic-datatables-container div.dt-container .dt-info {
+	color: #54595d;
+}
+
+.semantic-datatables-container div.dt-container .dt-paging > nav {
+	display: flex;
+	gap: 4px;
+	justify-content: center;
+	overflow-x: auto;
+}
+
+.semantic-datatables-container div.dt-container .dt-paging .ellipsis {
+	padding: 4px 0;
+	color: #72777d;
+	font-weight: 700;
+}
+
+.semantic-datatables-container div.dt-container .dt-paging .dt-paging-button {
+	min-width: 32px;
+	min-height: 32px;
+	margin-left: 0;
+	padding: 4px 8px;
+	border-color: transparent;
+	border-radius: 2px;
+	background: transparent;
+	color: #202122 !important;
+	font: inherit;
+	font-weight: 700;
+	transition: background-color 100ms, border-color 100ms, box-shadow 100ms, color 100ms;
+}
+
+.semantic-datatables-container div.dt-container .dt-paging .dt-paging-button:hover {
+	border-color: transparent;
+	background: #eaecf0;
+	color: #202122 !important;
+}
+
+.semantic-datatables-container div.dt-container .dt-paging .dt-paging-button:active {
+	border-color: #72777d;
+	background: #c8ccd1;
+	box-shadow: none;
+	color: #000 !important;
+}
+
+.semantic-datatables-container div.dt-container .dt-paging .dt-paging-button.current,
+.semantic-datatables-container div.dt-container .dt-paging .dt-paging-button.current:hover {
+	border-color: transparent;
+	background: #c8ccd1;
+	box-shadow: none;
+}
+
+.semantic-datatables-container div.dt-container .dt-paging .dt-paging-button.disabled,
+.semantic-datatables-container div.dt-container .dt-paging .dt-paging-button.disabled:hover,
+.semantic-datatables-container div.dt-container .dt-paging .dt-paging-button.disabled:active {
+	background: transparent;
+	box-shadow: none;
+	color: #72777d !important;
+}
+
+.semantic-datatables-container div.dt-buttons > .dt-button,
+.semantic-datatables-container div.dt-buttons > div.dt-button-split .dt-button,
+.semantic-datatables-container div.dtsb-searchBuilder button.dtsb-button {
+	min-height: 32px;
+	padding: 0 12px;
+	border: 1px solid #a2a9b1;
+	border-radius: 2px;
+	background: #f8f9fa;
+	color: #202122;
+	font: inherit;
+	font-weight: 700;
+	line-height: 1.6;
+	transition: background-color 100ms, border-color 100ms, box-shadow 100ms, color 100ms;
+}
+
+.semantic-datatables-container div.dt-buttons > .dt-button:hover,
+.semantic-datatables-container div.dt-buttons > div.dt-button-split .dt-button:hover,
+.semantic-datatables-container div.dtsb-searchBuilder button.dtsb-button:hover {
+	border-color: #72777d;
+	background: #fff;
+	color: #202122;
+}
+
+.semantic-datatables-container div.dt-buttons > .dt-button:active,
+.semantic-datatables-container div.dt-buttons > div.dt-button-split .dt-button:active,
+.semantic-datatables-container div.dtsb-searchBuilder button.dtsb-button:active {
+	border-color: #72777d;
+	background: #eaecf0;
+	box-shadow: none;
+	color: #000;
+}
+
+.semantic-datatables-container div.dtsb-searchBuilder {
+	margin: 0;
+}
+
+.semantic-datatables-container div.dtsb-searchBuilder div.dtsb-titleRow {
+	display: flex;
+	min-height: 32px;
+	margin-bottom: 0.75rem;
+	align-items: center;
+}
+
+.semantic-datatables-container div.dtsb-searchBuilder div.dtsb-titleRow div.dtsb-title {
+	padding: 0;
+	font-weight: 700;
+	text-align: start;
+	flex-grow: 1;
+}
+
+.semantic-datatables-container div.dtsb-searchBuilder div.dtsb-group {
+	display: flex;
+	margin-bottom: 0.5rem;
+	gap: 0.75rem;
+	flex-direction: column;
+}
+
+.semantic-datatables-container table.dataTable {
+	--dt-html-background: transparent;
+	margin: 0 !important;
+	border: 0;
+}
+
+.semantic-datatables-container table.dataTable thead > tr > th,
+.semantic-datatables-container table.dataTable thead > tr > td {
+	padding: 0.75rem;
+	border-bottom-color: #a2a9b1;
+	background-color: #fff;
+}
+
+.semantic-datatables-container table.dataTable thead > tr > th.dt-orderable-asc,
+.semantic-datatables-container table.dataTable thead > tr > th.dt-orderable-desc,
+.semantic-datatables-container table.dataTable thead > tr > td.dt-orderable-asc,
+.semantic-datatables-container table.dataTable thead > tr > td.dt-orderable-desc {
+	padding-inline-end: 30px;
+	transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
+}
+
+.semantic-datatables-container table.dataTable thead > tr > th.dt-orderable-asc:hover,
+.semantic-datatables-container table.dataTable thead > tr > th.dt-orderable-desc:hover,
+.semantic-datatables-container table.dataTable thead > tr > td.dt-orderable-asc:hover,
+.semantic-datatables-container table.dataTable thead > tr > td.dt-orderable-desc:hover {
+	border-color: #a2a9b1;
+	background-color: #eaecf0;
+	outline: none;
+}
+
+.semantic-datatables-container table.dataTable thead > tr > th.dt-orderable-asc:focus,
+.semantic-datatables-container table.dataTable thead > tr > th.dt-orderable-desc:focus,
+.semantic-datatables-container table.dataTable thead > tr > td.dt-orderable-asc:focus,
+.semantic-datatables-container table.dataTable thead > tr > td.dt-orderable-desc:focus {
+	box-shadow: inset 0 0 0 2px #36c;
+}
+
+.semantic-datatables-container table.dataTable tbody > tr > th,
+.semantic-datatables-container table.dataTable tbody > tr > td {
+	padding: 0.5rem 0.75rem;
+}
+
+.semantic-datatables-container table.dataTable.display > tbody > tr > * {
+	border-top-color: #c8ccd1;
+	transition: background-color 100ms, box-shadow 100ms;
+}
+
+.semantic-datatables-container table.dataTable.display > tbody > tr:nth-child( odd ) > * {
+	box-shadow: none;
+	background-color: #f8f9fa;
+}
+
+.semantic-datatables-container table.dataTable.display > tbody > tr > .sorting_1,
+.semantic-datatables-container table.dataTable.display > tbody > tr > .sorting_2,
+.semantic-datatables-container table.dataTable.display > tbody > tr > .sorting_3 {
+	box-shadow: none;
+	background-color: #eaecf0;
+}
+
+.semantic-datatables-container table.dataTable.display > tbody > tr:hover > * {
+	box-shadow: none;
+	background-color: #eaecf0;
+}
+
+.semantic-datatables-container div.dt-container div.dt-processing.semantic-datatables-processing {
+	position: absolute;
+	top: 0.75rem;
+	left: 50%;
+	width: auto;
+	min-width: 10rem;
+	margin: 0;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid #a2a9b1;
+	border-radius: 2px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba( 0, 0, 0, 0.2 );
+	color: #202122;
+	font-weight: 700;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	text-align: start;
+	transform: translateX( -50% );
+	z-index: 30;
+}
+
+.semantic-datatables-container div.dt-container.semantic-datatables-is-processing div.dt-processing.semantic-datatables-processing {
+	display: flex !important;
+}
+
+.semantic-datatables-container div.dt-container.semantic-datatables-is-processing table.dataTable tbody {
+	opacity: 0.55;
+	transition: opacity 100ms;
+}
+
+.semantic-datatables-processing-spinner {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border: 2px solid #c8ccd1;
+	border-top-color: #36c;
+	border-radius: 50%;
+	animation: semantic-datatables-processing-spin 800ms linear infinite;
+	flex: 0 0 auto;
+}
+
+@keyframes semantic-datatables-processing-spin {
+	to {
+		transform: rotate( 360deg );
+	}
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.semantic-datatables-processing-spinner {
+		animation: none;
+	}
+}
+
+.semantic-datatables-error {
+	margin: 0.5em 0;
+	padding: 0.75em 1em;
+	border-left: 4px solid #d33;
+	background: #fee7e6;
+	color: #202122;
+}
+
+table.semantic-datatables {
+	width: 100%;
+}

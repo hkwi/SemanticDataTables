@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hiroaki KAWAI"
+		]
+	},
+	"semanticdatatables-desc": "Adds a native DataTables result format for Semantic MediaWiki queries",
+	"semanticdatatables-printername": "DataTables native",
+	"semanticdatatables-paramdesc-noajax": "Disable DataTables ajax loading and render all rows into the page.",
+	"semanticdatatables-paramdesc-datatables-pageLength": "Number of rows shown per DataTables page.",
+	"semanticdatatables-paramdesc-datatables-lengthMenu": "Comma-separated DataTables page length choices.",
+	"semanticdatatables-paramdesc-datatables-searching": "Enable DataTables global search.",
+	"semanticdatatables-paramdesc-datatables-ordering": "Enable DataTables column ordering.",
+	"semanticdatatables-paramdesc-datatables-paging": "Enable DataTables pagination.",
+	"semanticdatatables-paramdesc-datatables-autoWidth": "Enable DataTables automatic width calculation.",
+	"semanticdatatables-paramdesc-datatables-scrollX": "Enable horizontal scrolling.",
+	"semanticdatatables-paramdesc-datatables-responsive": "Enable DataTables Responsive column folding.",
+	"semanticdatatables-paramdesc-datatables-buttons": "Comma-separated DataTables Buttons button names.",
+	"semanticdatatables-paramdesc-datatables-dom": "DataTables legacy dom option string.",
+	"semanticdatatables-paramdesc-datatables-ajax": "Deprecated compatibility parameter. Ajax loading is enabled by default; use noajax to disable it.",
+	"semanticdatatables-paramdesc-datatables-serverSide": "Deprecated compatibility parameter. Ajax loading is enabled by default; use noajax to disable it.",
+	"semanticdatatables-paramdesc-class": "Additional CSS classes for the table.",
+	"semanticdatatables-error-missing-datatables": "DataTables is not loaded. Load a DataTables ResourceLoader module before using this format.",
+	"semanticdatatables-loading": "Loading results..."
+}

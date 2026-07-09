@@ -1,0 +1,18 @@
+{
+	"name": "semantic-data-tables",
+	"version": "0.1.2",
+	"private": true,
+	"description": "Bundled frontend assets for the SemanticDataTables MediaWiki extension",
+	"license": "GPL-2.0-or-later",
+	"scripts": {
+		"build": "node tools/build-vendor.js",
+		"check": "node --check tools/build-vendor.js && node --check resources/ext.semanticDataTables.js && node --check resources/vendor/datatables/dataTables.min.js && node --check resources/vendor/datatables/dataTables.dataTables.min.js && node --check resources/vendor/datatables/dataTables.dateTime.min.js && node --check resources/vendor/datatables/dataTables.buttons.min.js && node --check resources/vendor/datatables/buttons.dataTables.min.js && node --check resources/vendor/datatables/buttons.html5.min.js && node --check resources/vendor/datatables/buttons.print.min.js && node --check resources/vendor/datatables/buttons.colVis.min.js && node --check resources/vendor/datatables/dataTables.responsive.min.js && node --check resources/vendor/datatables/responsive.dataTables.min.js && node --check resources/vendor/datatables/dataTables.searchBuilder.min.js && node --check resources/vendor/datatables/searchBuilder.dataTables.min.js"
+	},
+	"dependencies": {
+		"datatables.net-buttons-dt": "3.2.6",
+		"datatables.net-datetime": "1.6.3",
+		"datatables.net-dt": "2.3.8",
+		"datatables.net-responsive-dt": "3.0.8",
+		"datatables.net-searchbuilder-dt": "1.8.4"
+	}
+}

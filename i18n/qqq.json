@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hiroaki KAWAI"
+		]
+	},
+	"semanticdatatables-desc": "{{desc|name=SemanticDataTables|url=https://github.com/hkwi/SemanticDataTables}}",
+	"semanticdatatables-printername": "Result printer display name.",
+	"semanticdatatables-paramdesc-noajax": "{{doc-paramdesc|noajax}}",
+	"semanticdatatables-paramdesc-datatables-pageLength": "{{doc-paramdesc|datatables-pageLength}}",
+	"semanticdatatables-paramdesc-datatables-lengthMenu": "{{doc-paramdesc|datatables-lengthMenu}}",
+	"semanticdatatables-paramdesc-datatables-searching": "{{doc-paramdesc|datatables-searching}}",
+	"semanticdatatables-paramdesc-datatables-ordering": "{{doc-paramdesc|datatables-ordering}}",
+	"semanticdatatables-paramdesc-datatables-paging": "{{doc-paramdesc|datatables-paging}}",
+	"semanticdatatables-paramdesc-datatables-autoWidth": "{{doc-paramdesc|datatables-autoWidth}}",
+	"semanticdatatables-paramdesc-datatables-scrollX": "{{doc-paramdesc|datatables-scrollX}}",
+	"semanticdatatables-paramdesc-datatables-responsive": "{{doc-paramdesc|datatables-responsive}}",
+	"semanticdatatables-paramdesc-datatables-buttons": "{{doc-paramdesc|datatables-buttons}}",
+	"semanticdatatables-paramdesc-datatables-dom": "{{doc-paramdesc|datatables-dom}}",
+	"semanticdatatables-paramdesc-datatables-ajax": "Deprecated compatibility parameter description for {{doc-paramdesc|datatables-ajax}}.",
+	"semanticdatatables-paramdesc-datatables-serverSide": "Deprecated compatibility parameter description for {{doc-paramdesc|datatables-serverSide}}.",
+	"semanticdatatables-paramdesc-class": "{{doc-paramdesc|class}}",
+	"semanticdatatables-error-missing-datatables": "Shown inside the table container when the DataTables JavaScript library is unavailable.",
+	"semanticdatatables-loading": "Shown while DataTables is loading or refreshing ajax-backed table results."
+}
