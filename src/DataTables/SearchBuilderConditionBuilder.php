@@ -148,7 +148,7 @@ final class SearchBuilderConditionBuilder {
 		$parameters = is_array( $printout['parameters'] ?? null ) ? $printout['parameters'] : [];
 
 		if (
-			$mode !== PrintRequest::PRINT_PROP
+			!in_array( $mode, [ PrintRequest::PRINT_PROP, PrintRequest::PRINT_CHAIN ], true )
 			|| $property === ''
 			|| isset( $parameters['template'] )
 			|| !$this->isSafeProperty( $property )
