@@ -296,7 +296,9 @@
 		request.length = -1;
 		$button.prop( 'disabled', true ).addClass( 'disabled' );
 
-		new mw.Api().post( {
+		// Full exports can take longer than mw.Api's default 30-second timeout.
+		// Rely on the server-side execution limit for this request instead.
+		new mw.Api( { ajax: { timeout: 0 } } ).post( {
 			action: 'ext.semanticdatatables.query',
 			format: 'json',
 			context: tableConfig.context,
