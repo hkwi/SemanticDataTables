@@ -1,6 +1,6 @@
 {
 	"name": "semantic-data-tables",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"private": true,
 	"description": "Bundled frontend assets for the SemanticDataTables MediaWiki extension",
 	"license": "GPL-2.0-or-later",
